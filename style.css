@@ -2,30 +2,24 @@ body{
     background-color: rgb(66, 66, 66);
     margin: 0;
     font-family: 'Roboto Mono', monospace;
-}
-#containerClock{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    margin: 0;
 }
 #containerData{
+    color: white;
     line-height: 0.3;
     width: 60%;
     min-width: fit-content;
 }
 h1{
-    color: white;
     font-size:calc(75px + 5vw);
     text-align: center;
 }
 h2{
     opacity: .5;
-    color: white;
     font-size:calc(40px + 1vw);
     text-align: center;
-
-
 }
