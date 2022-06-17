@@ -2,9 +2,10 @@ function timeNow(){
     let date = new Date(); 
 
     // Get Date
-    let Day = date.getUTCDate().toString();
-    let Month = date.getUTCMonth().toString();
+    let Day = date.getDate().toString();
+    let Month = (date.getMonth()+1).toString();
     let Year = date.getFullYear().toString();
+    // fix Month count
 
     // Get Time
     let H = date.getHours().toString();
@@ -15,6 +16,8 @@ function timeNow(){
     H.length==1 ? H="0"+H : false;
     M.length==1 ? M="0"+M : false;
     S.length==1 ? S="0"+S : false;
+
+    
 
     // Format Date
     Day.length==1 ? Day="0"+Day : false;
@@ -28,4 +31,3 @@ function timeNow(){
 }
 
 setInterval(timeNow, 500);
-jQuery("h1").fitText(2);
